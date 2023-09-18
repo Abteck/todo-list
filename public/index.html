@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <script src="./script.js" defer></script>
+    <title>TODO-List</title>
+  </head>
+  <body>
+    <div
+      class="min-h-screen w-full bg-[url('./img/Todobg.jpg')] bg-cover bg-center p-3"
+    >
+      <div
+        id="container"
+        class="w-full max-w-md md:max-w-lg bg-slate-400 mt-16 mx-auto mb-7 p-8 rounded-md shadow-2xl"
+      >
+        <h2 class="flex items-center font-semibold text-2xl mb-8">
+          TODO-List <img src="./img/todolist.png" />
+        </h2>
+        <div
+          id="text-wrapper"
+          class="flex justify-between w-full border-b-2 rounded-br-lg relative mb-10"
+        >
+          <input
+            type="text"
+            id="text-box"
+            class="bg-transparent flex-1 border-none outline-none px-2 py-3 font-normal text-lg"
+            required
+          />
+          <button
+            id="button"
+            type="submit"
+            class="bg-[#3B9E62] text-white w-24 mb-2 rounded-3xl cursor-pointer"
+          >
+            Add
+          </button>
+          <label
+            class="absolute bottom-4 left-3 pointer-events-none transition-all text-lg text-slate-500"
+            for="text"
+            >Enter task</label
+          >
+        </div>
+        <ul id="list-item">
+          <!-- <li class="checked">Task 1</li>
+          <li>Task 1</li>
+          <li>Task 1</li> -->
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

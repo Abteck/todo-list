@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* color for button code #4F7EED */
+/* input filed color #E7E7E7 */
+/* #3B9E62 button */
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -12px;
+  font-size: 16px;
+}
+
+#list-item li {
+  position: relative;
+  list-style-type: none;
+  font-weight: normal;
+  padding: 7px 14px 10px 27px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  overflow-wrap: break-word;
+}
+
+#list-item li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background-image: url(./img/unchecked.png);
+}
+
+#list-item li.checked {
+  text-decoration: line-through;
+}
+#list-item li.checked:before {
+  background-image: url(./img/checked.png);
+}
+
+#list-item li span {
+  position: absolute;
+  font-size: 25px;
+  right: -7px;
+  top: 8px;
+  line-height: 20px;
+  width: 25px;
+  height: 25px;
+  color: #555;
+  text-align: center;
+}
+#list-item li span:hover {
+  background-color: slategray;
+  border-radius: 50%;
+}
